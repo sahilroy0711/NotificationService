@@ -1,6 +1,6 @@
-package NotificationSystem.Service.NotificationService;
+package main.java.Service.NotificationService;
 
-import NotificationSystem.Service.Observables.CustomerService;
+import main.java.Service.Observables.CustomerService;
 
 public class BillNotificationObserver implements NotificationService {
     public CustomerService customerService;
@@ -12,6 +12,6 @@ public class BillNotificationObserver implements NotificationService {
     }
     @Override
     public void update() {
-        System.out.println("Sending notification");
+        System.out.println("Sending notification for the bill change with new bill: "+customerService.getData());
     }
 }

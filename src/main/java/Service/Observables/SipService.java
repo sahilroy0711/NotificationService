@@ -1,6 +1,6 @@
-package NotificationSystem.Service.Observables;
+package main.java.Service.Observables;
 
-import NotificationSystem.Service.NotificationService.NotificationService;
+import main.java.Service.NotificationService.NotificationService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,5 +31,10 @@ public class SipService implements CustomerService {
             currPrice=newPrice;
             notifyA();
         }
+    }
+
+    @Override
+    public Integer getData(){
+        return currPrice;
     }
 }

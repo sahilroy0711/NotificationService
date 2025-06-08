@@ -1,10 +1,10 @@
-import NotificationSystem.Service.NotificationService.BillNotificationObserver;
-import NotificationSystem.Service.Observables.BillService;
-import NotificationSystem.Service.Observables.CustomerService;
-import NotificationSystem.Service.Observables.SipService;
-import NotificationSystem.Service.NotificationService.SipNotificationObserver;
+import main.java.Service.NotificationService.BillNotificationObserver;
+import main.java.Service.Observables.BillService;
+import main.java.Service.Observables.CustomerService;
+import main.java.Service.Observables.SipService;
+import main.java.Service.NotificationService.SipNotificationObserver;
 
-public class Main {
+public class NotificationSystem {
     public static void main(String[] args) {
         CustomerService billNotificationObservable = new BillService();
         CustomerService sipNotificationObservable = new SipService();

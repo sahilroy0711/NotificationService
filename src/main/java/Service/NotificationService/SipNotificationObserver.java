@@ -1,6 +1,6 @@
-package NotificationSystem.Service.NotificationService;
+package main.java.Service.NotificationService;
 
-import NotificationSystem.Service.Observables.CustomerService;
+import main.java.Service.Observables.CustomerService;
 
 public class SipNotificationObserver implements NotificationService {
     CustomerService sipService;
@@ -13,6 +13,6 @@ public class SipNotificationObserver implements NotificationService {
 
     @Override
     public void update() {
-        System.out.println("Sending sip message");
+        System.out.println("Sending sip message for price change to: "+sipService.getData());
     }
 }
