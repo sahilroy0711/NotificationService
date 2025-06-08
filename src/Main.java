@@ -9,9 +9,9 @@ public class Main {
         CustomerService billNotificationObservable = new BillService();
         CustomerService sipNotificationObservable = new SipService();
 
-        BillNotificationObserver observer1 = new BillNotificationObserver(billNotificationObservable,"abc");
-        BillNotificationObserver observer2 = new BillNotificationObserver(billNotificationObservable,"xyz");
-        SipNotificationObserver observer3 = new SipNotificationObserver(sipNotificationObservable,"abcx");
+        BillNotificationObserver observer1 = new BillNotificationObserver(billNotificationObservable,"abc","EMAIL");
+        BillNotificationObserver observer2 = new BillNotificationObserver(billNotificationObservable,"xyz","EMAIL");
+        SipNotificationObserver observer3 = new SipNotificationObserver(sipNotificationObservable,"abcx","SMS");
 
         billNotificationObservable.add(observer1);
         billNotificationObservable.add(observer2);
