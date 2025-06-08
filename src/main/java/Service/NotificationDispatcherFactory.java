@@ -1,4 +1,4 @@
-package NotificationSystem.Service.Notification;
+package main.java.Service;
 
 import java.util.HashMap;
 import java.util.Map;

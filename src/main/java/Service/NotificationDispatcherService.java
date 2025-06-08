@@ -1,4 +1,4 @@
-package NotificationSystem.Service.Notification;
+package main.java.Service;
 
 public interface NotificationDispatcherService {
     public void push();
